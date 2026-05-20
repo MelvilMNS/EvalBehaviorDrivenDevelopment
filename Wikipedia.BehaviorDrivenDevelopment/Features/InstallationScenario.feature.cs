@@ -11,14 +11,14 @@
 #region Designer generated code
 #pragma warning disable
 using Reqnroll;
-namespace Wikipedia.BehaviorDrivenDevelopment.Features
+namespace Bwapp.BehaviorDrivenDevelopment.Features
 {
     
     
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "3.0.0.0")]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class AuthenticationScenarioFeature
+    public partial class InstallationScenarioFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
@@ -27,9 +27,9 @@ namespace Wikipedia.BehaviorDrivenDevelopment.Features
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("en-US"), "Features", "AuthenticationScenario", "Authentication scenariis", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("en-US"), "Features", "InstallationScenario", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
         
-#line 1 "AuthenticationScenario.feature"
+#line 1 "InstallationScenario.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
@@ -117,26 +117,21 @@ namespace Wikipedia.BehaviorDrivenDevelopment.Features
         
         private static global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages InitializeCucumberMessages()
         {
-            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("Features/AuthenticationScenario.feature.ndjson", 3);
+            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("Features/InstallationScenario.feature.ndjson", 3);
         }
         
-        [global::Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute("As a visitor and on home page I want to click on \"Se connecter\" and be able to en" +
-            "ter login / password then click button login")]
-        [global::Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("As a visitor and on home page I want to click on \"Se connecter\" and be able to en" +
-            "ter login / password then click button login")]
-        [global::Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "AuthenticationScenario")]
-        [global::Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("tag1")]
-        public async global::System.Threading.Tasks.Task AsAVisitorAndOnHomePageIWantToClickOnSeConnecterAndBeAbleToEnterLoginPasswordThenClickButtonLogin()
+        [global::Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute("As a visitor I want to initialize bWAPP database")]
+        [global::Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("As a visitor I want to initialize bWAPP database")]
+        [global::Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "InstallationScenario")]
+        public async global::System.Threading.Tasks.Task AsAVisitorIWantToInitializeBWAPPDatabase()
         {
-            string[] tagsOfScenario = new string[] {
-                    "tag1"};
+            string[] tagsOfScenario = ((string[])(null));
             global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
             string pickleIndex = "0";
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("As a visitor and on home page I want to click on \"Se connecter\" and be able to en" +
-                    "ter login / password then click button login", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("As a visitor I want to initialize bWAPP database", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
             string[] tagsOfRule = ((string[])(null));
             global::Reqnroll.RuleInfo ruleInfo = null;
-#line 6
+#line 3
 this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -146,23 +141,14 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 7
- await testRunner.GivenAsync("I am a visitor at home page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
+#line 4
+ await testRunner.GivenAsync("I am on install page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
-#line 8
- await testRunner.WhenAsync("I click on the link se connecter", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+#line 5
+ await testRunner.WhenAsync("I click on the link here", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
-#line 9
- await testRunner.ThenAsync("I am at authentication page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
-#line hidden
-#line 10
- await testRunner.WhenAsync("I fill input password and input login", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
-#line hidden
-#line 11
- await testRunner.AndAsync("I click on button se connecter", ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
-#line hidden
-#line 12
- await testRunner.ThenAsync("I\'m still at the same page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+#line 6
+ await testRunner.ThenAsync("I am on installation confirmation page", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
