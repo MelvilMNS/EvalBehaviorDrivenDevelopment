@@ -12,16 +12,16 @@ namespace Bwapp.BehaviorDrivenDevelopment.StepDefinitions
             NavigationHelper.NavigateToUrl("http://localhost/login.php");
         }
 
-        [When("I enter login")]
-        public void WhenIEnterLogin()
+        [When("I enter login {string}")]
+        public void WhenIEnterLogin(string login)
         {
-            TextBoxHelper.TypeInTextBox(By.Id("login"), "bee");
+            TextBoxHelper.TypeInTextBox(By.Id("login"), login);
         }
 
-        [When("I enter password")]
-        public void WhenIEnterPassword()
+        [When("I enter password {string}")]
+        public void WhenIEnterPassword(string password)
         {
-            TextBoxHelper.TypeInTextBox(By.Id("password"), "bug");
+            TextBoxHelper.TypeInTextBox(By.Id("password"), password);
         }
 
         [When("I select security level low")]
@@ -39,7 +39,6 @@ namespace Bwapp.BehaviorDrivenDevelopment.StepDefinitions
         [Then("I am connected to bWAPP")]
         public void ThenIAmConnectedToBwapp()
         {
-            // vérification simple et robuste
             Assert.IsTrue(PageHelper.GetPageUrl().Contains("index.php")
                        || PageHelper.GetPageUrl().Contains("portal.php"));
         }
