@@ -4,7 +4,7 @@ using OpenQA.Selenium;
 namespace Bwapp.BehaviorDrivenDevelopment.StepDefinitions
 {
     [Binding]
-    public class LoginScenarioStepDefinitions
+    public class LoginScenarioSuccessfullStepDefinitions
     {
         [Given("I am on login page")]
         public void GivenIAmOnLoginPage()

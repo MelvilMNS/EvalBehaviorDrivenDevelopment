@@ -1,4 +1,4 @@
-﻿Feature: LoginScenario
+﻿Feature: LoginScenarioSuccessfull
 
 Scenario: As a user I want to login into bWAPP
 	Given I am on login page

@@ -18,7 +18,7 @@ namespace Bwapp.BehaviorDrivenDevelopment.Features
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "3.0.0.0")]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class LoginScenarioFeature
+    public partial class LoginScenarioSuccessfullFeature
     {
         
         private global::Reqnroll.ITestRunner testRunner;
@@ -27,7 +27,7 @@ namespace Bwapp.BehaviorDrivenDevelopment.Features
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("en-US"), "Features", "LoginScenario", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("en-US"), "Features", "LoginScenarioSuccessfull", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
         
 #line 1 "LoginSuccessfullScenario.feature"
 #line hidden
@@ -122,7 +122,7 @@ namespace Bwapp.BehaviorDrivenDevelopment.Features
         
         [global::Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute("As a user I want to login into bWAPP")]
         [global::Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("As a user I want to login into bWAPP")]
-        [global::Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "LoginScenario")]
+        [global::Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "LoginScenarioSuccessfull")]
         public async global::System.Threading.Tasks.Task AsAUserIWantToLoginIntoBWAPP()
         {
             string[] tagsOfScenario = ((string[])(null));
