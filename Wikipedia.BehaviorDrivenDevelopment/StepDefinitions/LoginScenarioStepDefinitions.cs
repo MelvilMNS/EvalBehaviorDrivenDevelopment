@@ -1,10 +1,11 @@
+using BugzillaWebDriver.BaseClasses;
 using BugzillaWebDriver.ComponentHelper;
 using OpenQA.Selenium;
 
 namespace Bwapp.BehaviorDrivenDevelopment.StepDefinitions
 {
     [Binding]
-    public class LoginScenarioSuccessfullStepDefinitions
+    public class LoginScenarioStepDefinitions
     {
         [Given("I am on login page")]
         public void GivenIAmOnLoginPage()
@@ -41,6 +42,25 @@ namespace Bwapp.BehaviorDrivenDevelopment.StepDefinitions
         {
             Assert.IsTrue(PageHelper.GetPageUrl().Contains("index.php")
                        || PageHelper.GetPageUrl().Contains("portal.php"));
+        }
+
+        [Then("I should see a login error message")]
+        public void ThenIShouldSeeALoginErrorMessage()
+        {
+            var pageSource = ObjectRepository.Driver.PageSource;
+
+            Assert.IsTrue(
+                pageSource.Contains("Invalid credentials")
+            );
+        }
+
+        [Then("I should stay on login page")]
+        public void ThenIShouldStayOnLoginPage()
+        {
+            Assert.AreEqual(
+                "http://localhost/login.php",
+                PageHelper.GetPageUrl()
+            );
         }
     }
 }
